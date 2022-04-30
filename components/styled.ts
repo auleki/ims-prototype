@@ -60,19 +60,19 @@ export const SFormContainer = styled.div(
         background-color: ${colors.black};
         color: ${colors.white};
         display: inline-flex;
-        /* height: 350px; */
         justify-content: flex-end;
-        gap: 1rem;
+        align-items: center;
+        gap: 2rem;
         border-radius: ${metrics.borderRadius};
         width: 400px;
-        padding: 3rem;
+        padding: 4rem;
         flex-direction: column;
     `
 )
 
 export const SButton = styled.button(
     () => css`
-        padding: 1rem 2rem;
+        padding: 1rem 4rem;
         border: none;
         background: ${colors.white};
         transition: background 150ms ease-out, transform 100ms ease-in;
@@ -95,9 +95,11 @@ export const SCenteredIcon = styled.span(
         /* text-align: center; */
         height: 50px;
         width: 50px;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         background: ${colors.lightBlack};
-        display: inline;
+        display: flex;
         border-radius: ${metrics.buttonRadius};
     `
 )
