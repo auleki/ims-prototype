@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"
-import { colors, metrics } from "../utils/constants"
+import { colors, fonts, metrics } from "../utils/constants"
 
 
 export const SFullPage = styled.div(
@@ -7,7 +7,14 @@ export const SFullPage = styled.div(
         height: 100vh;
         background: ${colors.black};
         overflow: hidden;
+        font-family: ${fonts.secondary};
         color: ${colors.white};
+    `
+)
+
+export const SPageTitle = styled.h1(
+    () => css`
+        font-family: ${fonts.heading};
     `
 )
 
@@ -40,13 +47,20 @@ export const SPage = styled.div(
     `
 )
 
+export const SCartContainer = styled.div(
+    () => css`
+
+    `
+)
+
 export const SInput = styled.input(
     () => css`
         background: ${colors.lightBlack};
         padding: 1rem 2rem;
-        font-size: ${metrics.normalFont};
+        font-size: ${metrics.smallFont};
         outline: 0;
         color: ${colors.white};
+        font-family: ${fonts.heading};
         border: 0;
         border-radius: ${metrics.borderRadius};
         &::placeholder {
@@ -72,13 +86,19 @@ export const SFormContainer = styled.div(
 
 export const SButton = styled.button(
     () => css`
-        padding: 1rem 4rem;
+        padding: .7rem 4rem;
         border: none;
         background: ${colors.white};
-        transition: background 150ms ease-out, transform 100ms ease-in;
+        transition: background 150ms ease-out, 
+        transform 100ms ease-in,
+        letter-spacing 200ms ease-in,
+        color 100ms ease-in;
+        font-family: ${fonts.text};
+        letter-spacing: 3px;
         border-radius: ${metrics.buttonRadius};
         font-size: ${metrics.normalFont};
         &:hover {
+            /* letter-spacing: 5px; */
             cursor: pointer;
             background: ${colors.red};
             color: ${colors.white};
@@ -92,7 +112,6 @@ export const SButton = styled.button(
 export const SCenteredIcon = styled.span(
     () => css`
         font-size: ${metrics.bigFont};
-        /* text-align: center; */
         height: 50px;
         width: 50px;
         justify-content: center;
@@ -114,5 +133,34 @@ export const SCenteredText = styled.h2(
 export const SRow = styled.div(
     () => css`
         width: 100%;
+    `
+)
+
+export const SCartTable = styled.table(
+    () => css`
+        border-collapse: collapse;
+        /* border: 3px solid ${colors.red}; */
+
+        th, td {
+            border: 3px solid ${colors.black};
+        }
+
+        tbody {
+            tr {
+                transition: background 200ms ease-in;
+                &:hover {
+                    background: ${colors.lightBlack};
+                }
+            }
+        }
+        
+        td {
+            padding: 1rem;
+        }
+
+        th {
+            background: ${colors.lightBlack};
+            
+        }
     `
 )

@@ -7,7 +7,12 @@ export const colors = {
     red: "#ff2b2b",
 }
 
-export const fonts = {}
+export const fonts = {
+    heading: "Tapestry",
+    primary: "Satisfy",
+    text: "Bebas Neue",
+    secondary: "Arima Madurai"
+}
 
 export const metrics = {
     borderRadius: ".5rem",

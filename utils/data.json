@@ -1,0 +1,24 @@
+{
+  "cartItems": [
+    {
+      "productDetail": "Milo",
+      "unitPrice": 200,
+      "quantity": 5
+    },
+    {
+      "productDetail": "Sardine",
+      "unitPrice": 700,
+      "quantity": 6
+    },
+    {
+      "productDetail": "Chocolate Bread",
+      "unitPrice": 700,
+      "quantity": 3
+    },
+    {
+      "productDetail": "Molten Basketball",
+      "unitPrice": 9000,
+      "quantity": 1
+    }
+  ]
+}
