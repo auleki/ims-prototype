@@ -2,6 +2,7 @@ import Head from "next/head"
 import { SButton, SCartContainer, SCartTable, SContainer, SFullPage, SPageTitle } from "../components/styled"
 import data from '.././utils/data.json'
 import CartItem from "../components/Cart/CartItem"
+import Link from "next/link"
 
 const Cart = () => {
   console.log(data.cartItems)
@@ -16,24 +17,31 @@ const Cart = () => {
         <SCartContainer>
           <SPageTitle>Shopping Cart</SPageTitle>
           <SCartTable>
-            <th>
-              <tr>
-                <td>Product Details</td>
-                <td>Unit Price</td>
-                <td>Quantity</td>
-                <td>Total Price</td>
-              </tr>
-            </th>
             <tbody>
+              <tr>
+                <th>Product Details</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Remove</th>
+              </tr>
               {data.cartItems.map(item => <CartItem item={item} key={item.productDetail} />)}
             </tbody>
             <tfoot>
               <tr>
                 <td>
-                  <SButton>Continue Shopping</SButton>
+                  <Link href={'/'} passHref>
+                    <SButton>Continue Shopping</SButton>
+                  </Link>
                 </td>
                 <td>
+                  <SButton>Add Product</SButton>
+                </td>
+                {/* <td>
                   <h3>Sub Total: N 500,000</h3>
+                </td> */}
+                <td>
+                  <h3>Total: N 600,000</h3>
                 </td>
                 <td>
                   <SButton>CHECKOUT</SButton>

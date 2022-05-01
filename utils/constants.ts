@@ -25,4 +25,7 @@ export const metrics = {
 
 export const icons = {
     user: RiIcon.RiUser6Fill,
+    minus: RiIcon.RiIndeterminateCircleLine,
+    plus: RiIcon.RiAddCircleLine,
+    delete: RiIcon.RiDeleteBin2Line
 }

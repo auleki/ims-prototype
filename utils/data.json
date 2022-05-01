@@ -19,6 +19,94 @@
       "productDetail": "Molten Basketball",
       "unitPrice": 9000,
       "quantity": 1
+    },
+    {
+      "productDetail": "Pringles",
+      "unitPrice": 200,
+      "quantity": 1
+    },
+    {
+      "productDetail": "Right Guard Deodorant Spray",
+      "unitPrice": 1400,
+      "quantity": 4
+    },
+    {
+      "productDetail": "Victoria's Secret Fragrance Mist",
+      "unitPrice": 2300,
+      "quantity": 2
+    },
+    {
+      "productDetail": "Ajire Minced Meat",
+      "unitPrice": 1300,
+      "quantity": 5
+    }
+  ],
+  "inventory": [
+    {
+      "productDetail": "Molten Basketball",
+      "unitPrice": 9000,
+      "stock": 13,
+      "id": 9182
+    },
+    {
+      "productDetail": "Chocolate Bread",
+      "unitPrice": 700,
+      "stock": 35,
+      "id": 2001
+    },
+    {
+      "productDetail": "Milo",
+      "unitPrice": 200,
+      "stock": 40,
+      "id": 8710
+    },
+    {
+      "productDetail": "Pringles",
+      "unitPrice": 900,
+      "stock": 23,
+      "id": 8410
+    },
+    {
+      "productDetail": "Right Guard Deodorant Spray",
+      "unitPrice": 1400,
+      "stock": 11,
+      "id": 1082
+    },
+    {
+      "productDetail": "Victoria's Secret Fragrance Mist",
+      "unitPrice": 2300,
+      "stock": 43,
+      "id": 2091
+    },
+    {
+      "productDetail": "Fredrick's NIV Bible",
+      "unitPrice": 45000,
+      "stock": 91,
+      "id": 6600
+    },
+    {
+      "productDetail": "Ajire Minced Meat",
+      "unitPrice": 1300,
+      "stock": 22,
+      "id": 5419
+    },
+    {
+      "productDetail": "Bucket Plantain Chips",
+      "unitPrice": 1400,
+      "stock": 23,
+      "id": 8810
+    },
+    {
+      "productDetail": "Heinz Corned Beef",
+      "unitPrice": 800,
+      "stock": 19,
+      "id": 7121
+    },
+    {
+      "productDetail": "Kellogs Cornflakes",
+      "unitPrice": 2400,
+      "stock": 24,
+      "id": 3810
     }
   ]
 }
