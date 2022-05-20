@@ -1,11 +1,17 @@
 import Head from "next/head"
-import { SButton, SCartContainer, SCartTable, SContainer, SFullPage, SPageTitle } from "../components/styled"
+import {
+  SButton,
+  SCartContainer,
+  SCartTable,
+  SContainer,
+  SFullPage,
+  SPageTitle
+} from "../components/styled"
 import data from '.././utils/data.json'
 import CartItem from "../components/Cart/CartItem"
 import Link from "next/link"
 
 const Cart = () => {
-  console.log(data.cartItems)
   return (
     <SFullPage>
       <Head>

@@ -98,6 +98,7 @@ export const SFormContainer = styled.div(
         display: inline-flex;
         justify-content: flex-end;
         align-items: center;
+        border: 1.5px solid #333;
         gap: 2rem;
         border-radius: ${metrics.borderRadius};
         width: 400px;
@@ -194,6 +195,7 @@ export const SCartTable = styled.table(
         /* border: 3px solid ${colors.lightBlack}; */
         opacity: .9;
         width: 100%;
+        border-radius: ${metrics.borderRadius};
         background: ${colors.black};
         padding: 3rem;
 
